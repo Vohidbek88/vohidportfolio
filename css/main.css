@@ -1,0 +1,360 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+}
+/* HOME */
+.menu-btn {
+  display: none;
+}
+.logo {
+  padding-left: 110px;
+  cursor: pointer;
+  position: relative;
+}
+.home {
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  background-color:lightblue;
+  box-shadow: 0px 5px 5px rgb(150, 150, 177);
+  top: 0;
+  left: 1.2%;
+  right: 1.2%;
+  z-index: 999;
+}
+
+.head .navigation .items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.navigation .items .item {
+  margin-right: 25px;
+}
+.link {
+  color: black;
+  transition: 0.3s;
+}
+.item .link:hover {
+  color: blue;
+}
+.item .link:focus {
+  border-bottom: 2px solid lightseagreen;
+}
+.home .head .logo h1::after {
+  position: absolute;
+  content: "";
+  top: 22%;
+  left: 1.4%;
+  width: 100px;
+  height: 10px;
+  background: linear-gradient(45deg, red, blue, green);
+}
+.home .head .logo h1::before {
+  position: absolute;
+  content: "";
+  top: 22%;
+  right: -45%;
+  width: 100px;
+  height: 10px;
+  background: linear-gradient(45deg, red, blue, green);
+}
+.download-btn {
+  background: linear-gradient(45deg, red, blue);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.bosh-qism {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 9.5rem 0;
+  background: linear-gradient(45deg, green, blue);
+}
+.qisqacha h1 {
+  font-size: 50px;
+  line-height: 90px;
+  color: skyblue;
+}
+.qisqacha h2 {
+  font-size: 30px;
+  line-height: 50px;
+  color: rgba(37, 220, 20, 0.705);
+}
+.social i {
+  color: #ddd;
+  background-color: #2222227a;
+  font-size: 25px;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.social i:hover {
+  transform: scale(1.1);
+}
+
+/* About */
+
+.about {
+  padding: 5rem 3rem;
+  background: linear-gradient(45deg, green, blue);
+}
+
+.main_h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+.about .me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.me-img {
+  width: 40%;
+}
+.me-img img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+.info {
+  width: 55%;
+}
+
+.info p {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+/* Work */
+.work {
+  padding: 5rem 3rem;
+  background: linear-gradient(45deg, green, blue);
+}
+.works {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.workbox {
+  width: calc(33% - 40px);
+  margin: 0 20px;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.workbox img {
+ width: 100%;
+  border-radius: 10px;
+}
+/* .works{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+} */
+.work-info{
+  padding-top: 10px;
+  font-size: 20px;
+}
+.workbox {
+  padding-top: 20px;
+}
+.contact {
+  padding: 5rem 3rem;
+  background: linear-gradient(45deg, green, blue);
+}
+.connect {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+#message {
+  border-radius: 10px;
+  border: 1px solid crimson;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.email-inp {
+  border-radius: 10px;
+
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 20px;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.row {
+  width: 400px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.contact-info .row .icon {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  transition: 0.5s;
+}
+.contact-info .row .icon:hover {
+  transform: scale(1.2);
+  border: 1px solid gray;
+}
+.row .content {
+  min-width: 70%;
+}
+.content h5 {
+  font-size: 20px;
+}
+.row .content span {
+  font-size: 30px;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 3rem;
+  background: linear-gradient(45deg, green, rgb(62, 62, 80));
+  text-align: center;
+}
+footer span {
+  color: #ddd;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .about .me {
+    padding: 0;
+    flex-direction: column;
+  }
+  .about .me-img,
+  .info {
+    width: 100%;
+  }
+  .about .info p {
+    font-size: 18px;
+  }
+  .about {
+    padding: 1rem;
+  }
+  .work {
+    padding: 1rem;
+  }
+  .workbox{
+    width: calc(100% - 10px);
+    margin: 4px 5px;
+  }
+.works{
+  justify-content: center;
+}
+
+  .contact {
+    padding: 1rem;
+  }
+  .connect {
+    width: 100%;
+  }
+  .home .head .logo h1::before {
+    display: none;
+  }
+  .qisqacha h1 {
+    font-size: 40px;
+  }
+  .content h5 {
+    font-size: 16px;
+  }
+  .content span {
+    font-size: 22px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .head{
+    background-color: lightblue;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    position: relative;
+
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .menu-btn .navigation-mb {
+    position: absolute;
+    width: 280px;
+    top: 60px;
+    height: 100vh;
+    left: -300px;
+    background-color: rgba(0, 0, 0, 0.658);
+    transition: 0.3s ease-out;
+  }
+  .menu-btn .items .item {
+    padding-top: 15px;
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+  .link {
+    color: white;
+    font-size: 20px;
+  }
+  .navigation-mb .items {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
+   left: 0;
+  }
+
+
+}
