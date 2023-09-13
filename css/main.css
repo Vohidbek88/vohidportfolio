@@ -266,6 +266,16 @@ footer span {
   color: #ddd;
   font-size: 20px;
 }
+@media(min-width:960px){
+  .workbox p{
+    font-size: 1,5rem;
+  }
+}
+@media(min-width:501px){
+  .workbox p{
+    font-size: 1rem;
+  }
+}
 @media (max-width: 768px) {
   .navigation {
     display: none;
@@ -280,6 +290,7 @@ footer span {
   }
   .about .info p {
     font-size: 18px;
+    line-height: 24px;
   }
   .about {
     padding: 1rem;
@@ -290,6 +301,9 @@ footer span {
   .workbox{
     width: calc(100% - 10px);
     margin: 4px 5px;
+  }
+  .workbox p{
+    font-size: 1.3rem;
   }
 .works{
   justify-content: center;
@@ -357,4 +371,13 @@ footer span {
   }
 
 
+}
+@media(min-width:769px) and (max-width:1070px){
+  .info p{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .workbox p{
+    font-size: 1rem;
+  }
 }
