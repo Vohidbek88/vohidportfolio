@@ -366,10 +366,12 @@ footer span {
     align-items: end;
   }
 
-  .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
+  /* .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
    left: 0;
-  }
-
+  } */
+  .navigation-mb.active{
+  left: 0;
+}
 
 }
 @media(min-width:769px) and (max-width:1070px){

@@ -153,5 +153,17 @@
 </footer>
 <!-- Footer end -->
 </div>
+
+<script>
+    document.querySelector('#toggle').addEventListener('click',()=>{
+        document.querySelector('.navigation-mb').classList.toggle('active')
+    })
+    document.querySelectorAll('.navigation-mb .items .item').forEach(item=>{
+        item.addEventListener('click',()=>{
+            document.querySelector('.navigation-mb').classList.toggle('active')
+            
+        })
+    })
+</script>
 </body>
 </html>
