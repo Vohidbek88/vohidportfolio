@@ -347,9 +347,9 @@ footer span {
     width: 100vw;
     top: 0px;
     height: 100vh;
-    left: -400px;
+    left: -200%;
     background-color: rgba(0, 0, 0, 0.993);
-    transition: 0.6s;
+    transition: 1s;
   }
   .menu-btn .items .item {
     padding-top: 20px;
