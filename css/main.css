@@ -363,7 +363,7 @@ footer span {
   .navigation-mb .items {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
   }
 
   /* .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
