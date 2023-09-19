@@ -201,21 +201,15 @@
     </div>
 
     <script>
-        function disable() {
-            scrollTop = window.pageXOffset || document.documentElement.scrollTop
-            scrollLeft = window.pageYOffset || document.documentElement.scrollLeft
-            window.onscroll = function () {
-                window.scrollTo(scrollLeft,scrollTop
-                )
-            }
-        }
+    
         document.querySelector('#toggle').addEventListener('click', () => {
-            disable()
             document.querySelector('.navigation-mb').classList.toggle('active')
+            document.querySelector('.navigation-mb').classList.toggle('fixed')
         })
 
         document.querySelectorAll('.navigation-mb .items .item').forEach(item => {
             item.addEventListener('click', () => {
+            document.querySelector('.navigation-mb').classList.toggle('fixed')
                 document.querySelector('.navigation-mb').classList.toggle('active')
 
             })

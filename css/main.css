@@ -345,10 +345,10 @@ footer span {
   .menu-btn .navigation-mb {
     position: absolute;
     width: 280px;
-    top: 60px;
+    top: 0px;
     height: 100vh;
     left: -300px;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.993);
     transition: 0.3s ease-out;
   }
   .menu-btn .items .item {
@@ -372,7 +372,9 @@ footer span {
   .navigation-mb.active{
   left: 0;
 }
-
+.navigation-mb.fixed{
+  position: fixed;
+}
 }
 @media(min-width:769px) and (max-width:1070px){
   .info p{
