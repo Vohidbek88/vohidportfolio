@@ -349,10 +349,10 @@ footer span {
     height: 100vh;
     left: -600px;
     background-color: rgba(0, 0, 0, 0.993);
-    transition: 0.4s ease-out;
+    transition: 0.4s;
   }
   .menu-btn .items .item {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 10px;
     margin-top: 20px;
   }
@@ -371,7 +371,7 @@ footer span {
 .item.rel .abs{
   position: absolute;
   top: -10%;
-  left: 1020%;
+  left: 1220%;
   font-size: 30px;
 }
   /* .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
