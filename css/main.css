@@ -344,12 +344,12 @@ footer span {
   }
   .menu-btn .navigation-mb {
     position: absolute;
-    width: 280px;
+    width: 100vw;
     top: 0px;
     height: 100vh;
-    left: -300px;
+    left: -600px;
     background-color: rgba(0, 0, 0, 0.993);
-    transition: 0.3s ease-out;
+    transition: 0.4s ease-out;
   }
   .menu-btn .items .item {
     padding-top: 15px;
@@ -365,7 +365,15 @@ footer span {
     flex-direction: column;
     align-items: center;
   }
-
+.item.rel{
+  position: relative;
+}
+.item.rel .abs{
+  position: absolute;
+  top: -10%;
+  left: 1020%;
+  font-size: 30px;
+}
   /* .menu-btn input[type="checkbox"]:checked ~ .navigation-mb {
    left: 0;
   } */
