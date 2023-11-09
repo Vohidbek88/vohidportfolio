@@ -58,7 +58,8 @@
                         <a href="https://youtube.com/@Vohid8888" target="_blank"><i class="fab fa-youtube"
                                 style="color: rgba(255, 0, 0, 0.932);"></i></a>
                     </div>
-                    <button class="download-btn"><a target="_blank" style="color: white;" href="https://resume.io/r/AD36BUnje">Download CV</a></button>
+                    <button class="download-btn"><a target="_blank" style="color: white;"
+                            href="https://resume.io/r/AD36BUnje">Download CV</a></button>
                 </div>
             </main>
         </section>
@@ -73,7 +74,8 @@
                 </div>
                 <div class="info">
                     <p>Salom. Men Frontend dasturchiman. Bir necha yildan beri faqat Frontendni o'rganib kelyapman. Men
-                        HTML5,CSS3,SASS, BOOTSTRAP kabi texnologiyalarni va Javascript, React,React-Redux, Vue dasturlash
+                        HTML5,CSS3,SASS, BOOTSTRAP kabi texnologiyalarni va Javascript, React,React-Redux, Vue
+                        dasturlash
                         tillarini o'rganganman.
                         Hozirda Nodejs va vuexni o'rganish jarayonidaman.
                         <a href="https://sammi.ac" style="color: blueviolet;" title="sammi.ac">sammi.ac↗</a> mana shu
@@ -153,9 +155,8 @@
                 </div>
                 <div class="workbox">
                     <img src="./img/reactmarket.png" alt="work4">
-                    <p class="work-info">Bu Reactda qilingan kichik Shop. <a
-                            href="https://onshopvohid.netlify.app/" style="color: rgb(128, 62, 0);"
-                            target="_blank">Netlify↗</a>
+                    <p class="work-info">Bu Reactda qilingan kichik Shop. <a href="https://onshopvohid.netlify.app/"
+                            style="color: rgb(128, 62, 0);" target="_blank">Netlify↗</a>
                         <a href="https://github.com/Vohidbek88/reactmarket.git" style="color: rgb(128, 51, 0);"
                             target="_blank">Github↗</a>
                     </p>
@@ -197,7 +198,8 @@
                     </div>
                 </div>
             </div>
-            <form class="connect">
+            <form class="connect" onsubmit="sendEmail()">
+                <input type="text" class="name-inp" placeholder="Name">
                 <input type="email" class="email-inp" placeholder="Emailingiz">
                 <textarea name="" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
                 <button type="submit" class="download-btn">Send</button>
@@ -211,22 +213,15 @@
         </footer>
         <!-- Footer end -->
     </div>
-
-    <script>
-    
-        document.querySelector('#toggle').addEventListener('click', () => {
-            document.querySelector('.navigation-mb').classList.toggle('active')
-            document.querySelector('.navigation-mb').classList.toggle('fixed')
-        })
-
-        document.querySelectorAll('.navigation-mb .items .item').forEach(item => {
-            item.addEventListener('click', () => {
-            document.querySelector('.navigation-mb').classList.toggle('fixed')
-                document.querySelector('.navigation-mb').classList.toggle('active')
-
-            })
-        })
-    </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("FU8XmHe4CqPsNNfG-");
+})();
+</script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
