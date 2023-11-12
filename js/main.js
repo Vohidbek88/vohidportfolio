@@ -13,6 +13,7 @@ document.querySelectorAll('.navigation-mb .items .item').forEach(item => {
 })
 
 function sendEmail() {
+    
     const params = {
         name: document.querySelector('.name-inp').value,
         email: document.querySelector('.email-inp').value,
@@ -23,13 +24,12 @@ function sendEmail() {
     const templete_id = 'template_jcktmbq'
 
     emailjs.send(service_ID, templete_id, params)
-        .then(
-            res => {
+    .then(
+        res => {
                 document.querySelector('.name-inp').value = ''
                 document.querySelector('.email-inp').value = ''
                 document.getElementById('message').value = ''
                 console.log(res);
-                alert('You message sent successfuly!')
             }
         )
         .catch(error => console.log(error))
